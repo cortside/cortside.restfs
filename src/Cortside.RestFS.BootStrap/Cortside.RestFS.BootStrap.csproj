@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="AsyncAnalyzers" Version="1.1.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Cortside.AspNetCore" Version="6.0.137" />
+    <PackageReference Include="Cortside.Common.BootStrap" Version="6.0.376" />
+    <PackageReference Include="Cortside.Common.Cryptography" Version="6.0.376" />
+    <PackageReference Include="DistributedLock.SqlServer" Version="1.0.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Threading.Analyzers" Version="17.7.30">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="MiniProfiler.AspNetCore.Mvc" Version="4.3.8" />
+    <PackageReference Include="MiniProfiler.EntityFrameworkCore" Version="4.3.8" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cortside.RestFS.Configuration\Cortside.RestFS.Configuration.csproj" />
+    <ProjectReference Include="..\Cortside.RestFS.Data\Cortside.RestFS.Data.csproj" />
+    <ProjectReference Include="..\Cortside.RestFS.DomainService\Cortside.RestFS.DomainService.csproj" />
+    <ProjectReference Include="..\Cortside.RestFS.Facade\Cortside.RestFS.Facade.csproj" />
+  </ItemGroup>
+</Project>
